@@ -1,0 +1,43 @@
+{
+  "name": "ui-design-review-bot",
+  "version": "1.0.0",
+  "description": "Automated UI design review tool that compares design references against deployed web apps",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "ui-review": "./src/cli.js"
+  },
+  "scripts": {
+    "review": "node src/cli.js",
+    "install:browsers": "npx playwright install chromium",
+    "generate:sample": "node scripts/generate-sample.mjs",
+    "test": "node src/cli.js --design=./scripts/samples/design-reference.png --url=https://example.com --viewport=1440x900"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.48.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0",
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ui-review",
+    "design-comparison",
+    "playwright",
+    "visual-regression",
+    "accessibility"
+  ],
+  "author": "UI Design Review Bot",
+  "license": "MIT",
+  "allowScripts": {
+    "sharp@0.33.5": true
+  }
+}
