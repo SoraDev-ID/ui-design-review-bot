@@ -1,0 +1,14 @@
+{
+  "name": "issue-triage-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Automated issue triage agent using Gemini AI + GitHub API",
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@octokit/rest": "^21.0.2"
+  },
+  "allowScripts": {
+    "@google/genai@1.52.0": true,
+    "protobufjs@7.6.6": true
+  }
+}

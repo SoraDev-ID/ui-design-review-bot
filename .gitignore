@@ -1,5 +1,6 @@
 node_modules/
 review-output/
+.triage/
 .env
 *.log
 .DS_Store
